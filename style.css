@@ -1,0 +1,30 @@
+.redRow,
+.yellowRow,
+.greenRow,
+.blueRow{
+    padding-top: 20px;
+}
+
+
+
+
+.redRow {
+    background-color: red;
+}
+
+.yellowRow {
+    background-color: yellow;
+}
+
+.greenRow {
+    background-color: green ;
+}
+
+.blueRow {
+    background-color: blue;
+}
+
+.numberBox{
+    padding: 5px;
+    border: black 1px solid;
+}
