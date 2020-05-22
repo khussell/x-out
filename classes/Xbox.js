@@ -1,5 +1,6 @@
 class Xbox {
-    constructor(brand) {
-      this.carname = brand;
+    constructor(color) {
+      this.color = color;
+      this.html = $('<button></button>')
     }
   }

@@ -6,7 +6,7 @@ class NumberBox {
     }
 
     createNumberBox = () => {
-        let numberBox = `<span class="numberBox" data-color=${this.color} data-number=${this.number}>${this.number}</span>`
+        let numberBox = `<span class="numberBox" style="color: ${this.color}" data-color=${this.color} data-number=${this.number}>${this.number}</span>`
         return numberBox;
     }
 }
