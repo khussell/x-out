@@ -2,6 +2,7 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: grey;
 }
 
 .redRow,
@@ -10,15 +11,8 @@ body{
 .blueRow{
     padding-top: 20px;
     width: 600px;
-    height: 60px;
+    height: 80px;
 }
-
-
-
-body{
-    background-color: lightgrey;
-}
-
 
 
 .redRow {
@@ -38,10 +32,13 @@ body{
     background-color: #3c3cec;
 }
 
-.numberBox{
+.numberBox,
+.closeBox{
     width: 30px;
     height: 30px;
     padding: 5px;
     margin: 10px;
+    border: none;
     background-color: rgba(252, 252, 252, 0.7);
 }
+
