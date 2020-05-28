@@ -5,18 +5,24 @@ class NumberRow {
       
     }
     displayNumberRow = () => {
-        let entireNumberRow = $(`<p></p>`)
-        let justNumberBoxesAndCloseBox = $(`<span class=${this.name}></span>`)
+        let entireNumberRow = $(`<div class='row'></div>`)
+        let numberBoxColumn = $(`<div class='col-10'></div>`)
+        let closeAndXboxColumn = $(`<div class='col-2'></div>`)
+        let numberBoxes = $(`<span class='${this.name} row'></span>`)
+        numberBoxColumn.append(numberBoxes)
         for(var i = 1; i<=12; i++) {
             let numberForBox = i
             let numberBox = new NumberBox(this.color, numberForBox);
             let numberBoxHTML = numberBox.createNumberBox();  
-            justNumberBoxesAndCloseBox.append(numberBoxHTML);
+            numberBoxes.append(numberBoxHTML);
         }
         let closeBox = new CloseBox();
-        justNumberBoxesAndCloseBox.append(closeBox.html);
         let xbox = new Xbox();
-        entireNumberRow.append(justNumberBoxesAndCloseBox, xbox.html)
+       
+        let closeAndXBox = $(`<div class='row'></div>`)
+        closeAndXBox.append(closeBox.html, xbox.html);
+        closeAndXboxColumn.append(closeAndXBox)
+        entireNumberRow.append(numberBoxColumn, closeAndXboxColumn)
         return entireNumberRow;
     }
   }
