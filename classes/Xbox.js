@@ -1,6 +1,5 @@
 class Xbox {
-    constructor(color) {
-      this.color = color;
-      this.html = $('<button class="col-sm-6 clickableBox noX" data-type="x" data-number=" "></button>')
+    constructor(name) {
+      this.html = $(`<button class="col-sm-6 noX xbox ${name} end" data-type="x" data-number=" " data-name=${name}></button>`)
     }
   }

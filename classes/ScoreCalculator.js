@@ -23,9 +23,6 @@ class ScoreCalculator {
             case 'blue':
                 this.blueXs += 1
                 break;
-            case 'x':
-                this.xAmount += 1
-                break;
         }
     }
 
@@ -43,8 +40,33 @@ class ScoreCalculator {
             case 'blue':
                 this.blueXs -= 1
                 break;
-            case 'x':
-                break;
+        }
+    }
+
+    addX = () => {
+        if(this.xAmount === 4){
+            return;
+        }
+        this.xAmount++;
+    }
+
+    removeX = () => {
+        if(this.xAmount === 0){
+            return;
+        }
+        this.xAmount--;
+    }
+
+    calculateColorScore = (type) => {
+        switch(type) {
+            case 'red':
+                return this.scoresForHowManyXs[this.redXs]
+            case 'yellow':
+                return this.scoresForHowManyXs[this.yellowXs]
+            case 'green':
+                return this.scoresForHowManyXs[this.greenXs]
+            case 'blue':
+                return this.scoresForHowManyXs[this.blueXs]
         }
     }
     
