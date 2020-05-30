@@ -1,8 +1,89 @@
-
-body{
-    margin: 0;
-    padding: 0;
-    
+button{
+    border: none;
+    height: 50px;
+    font-size: 20px;
+    background-color: white;
+  
 }
+.all{
+    background-color: rgb(220,220,220);
+
+}
+
+
+
+
+
+@media (min-width: 576px) {
+    button{
+       width: 100%;
+        
+    }
+
+    .numberBox{
+        background-color: rgba(252, 252, 252, 0.911);
+        font-size: 25px;
+        
+    }
+
+    .numberRow{
+        height: 70px;
+        margin-bottom: 10px;
+    }
+
+    .redNumberRow{
+        background-color: rgb(223,60,43);    
+    }
+
+    .yellowNumberRow{
+        background-color: rgb(255,220,46);
+    }
+
+    .greenNumberRow{
+        background-color: rgb(60,176,111);
+    }
+    .blueNumberRow{
+        background-color: rgb(70,107,214);
+    }
+
+    svg{
+        font-size: 30px;
+    }
+    
+    .closeBox{
+        background-color: rgba(252, 252, 252, 0.911);
+       
+    }
+
+    .red {
+        color: rgb(223,60,43);
+    }
+
+    .yellow{
+        color: rgb(255,220,46);
+    }
+
+    .green{
+        color: rgb(60,176,111);
+    }
+
+    .blue{
+        color: rgb(70,107,214);
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+ }
 
 
