@@ -7,7 +7,7 @@ button{
 }
 .all{
     background-color: rgb(220,220,220);
-
+    padding-bottom: 30px;
 }
 
 
@@ -16,8 +16,13 @@ button{
 
 @media (min-width: 576px) {
     button{
-       width: 100%;
-        
+        width: 100%;
+         
+     }
+
+    .xBox{
+        margin-right: 20px;
+        background-color: white;
     }
 
     .numberBox{
@@ -70,13 +75,89 @@ button{
     .blue{
         color: rgb(70,107,214);
     }
+
+    .redTotal{
+        color:  rgb(223,60,43);
+        background-color: rgb(223,60,43);
+        border-radius: 10%;
+        height: 40px;
+        width: 200px;
+        
+    }
+
+    .yellowTotal{
+        color: rgb(255,220,46);
+        background-color: rgb(255,220,46);
+        border-radius: 10%;
+        height: 40px;
+    }
+
+    .greenTotal{
+        color: rgb(60,176,111);
+        background-color: rgb(60,176,111);
+        border-radius: 10%;
+        height: 40px;
+    }
+
+    .blueTotal{
+        color: rgb(70,107,214);
+        background-color: rgb(70,107,214);
+        border-radius: 10%;
+        height: 40px;
+    }
+
+    .xTotal{
+        color: white;
+        background-color: white;
+        border-radius: 10%;
+        height: 40px;
+    }
     
+    .scoreTotal{
+        color: white;
+        background-color: white;
+        border-radius: 10%;
+        height: 40px;
+    }
+
+    .scoreTotal{
+        color: white;
+        background-color: white;
+        border-radius: 10%;
+        height: 40px;
+    }
 
 
 
+    .trophyDiv,
+    .endGame{
+        background-color: rgb(220,220,220);
+    }
+
+    .bi-trophy{
+        color:black;
+    }
+
+    .scoreDiv{
+        margin-top: 10px;
+    }
 
 
 
+    .title{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .heading{
+        text-align: center;
+        font-size: 35px;
+    }
+
+    .refresh,
+    .addXBtn{
+        border-radius: 10%;
+    }
 
 
 

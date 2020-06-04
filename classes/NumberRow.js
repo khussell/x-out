@@ -31,7 +31,7 @@ class NumberRow {
         numberBoxes.append(closeBox.html)
         let xbox = new Xbox(this.xBoxName);
        
-        let xBoxRow = $(`<div class='row'></div>`)
+        let xBoxRow = $(`<div class='row justify-content-around'></div>`)
         xBoxRow.append(xbox.html);
         xboxColumn.append(xBoxRow)
         entireNumberRow.append(numberBoxAndCloseColumn, xboxColumn)

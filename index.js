@@ -46,12 +46,12 @@ $('body').on('click', '.clickableBox', function(event){
 
 $('body').on('click', '.endGame', function(event) {
     $('.end').prop('disabled', true);
-    $('.redTotal').text(scoreCalculator.calculateColorScore('red'));
-    $('.yellowTotal').text(scoreCalculator.calculateColorScore('yellow'));
-    $('.greenTotal').text(scoreCalculator.calculateColorScore('green'));
-    $('.blueTotal').text(scoreCalculator.calculateColorScore('blue'));
-    $('.xTotal').text(scoreCalculator.calculateColorScore('x'));
-    $('.scoreTotal').text(scoreCalculator.calculateScore());
+    $('.redTotal').text(scoreCalculator.calculateColorScore('red')).css('color', 'black').css('font-size', '25px').css('text-align', 'center');
+    $('.yellowTotal').text(scoreCalculator.calculateColorScore('yellow')).css('color', 'black').css('font-size', '25px').css('text-align', 'center');
+    $('.greenTotal').text(scoreCalculator.calculateColorScore('green')).css('color', 'black').css('font-size', '25px').css('text-align', 'center');
+    $('.blueTotal').text(scoreCalculator.calculateColorScore('blue')).css('color', 'black').css('font-size', '25px').css('text-align', 'center');
+    $('.xTotal').text(scoreCalculator.calculateColorScore('x')).css('color', 'black').css('font-size', '25px').css('text-align', 'center');
+    $('.scoreTotal').text(scoreCalculator.calculateScore()).css('color', 'black').css('font-size', '25px').css('text-align', 'center');
 })
 
 $('body').on('click', '.closeBox', function(event) {
