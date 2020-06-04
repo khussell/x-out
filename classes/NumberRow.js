@@ -14,7 +14,7 @@ class NumberRow {
         numberBoxAndCloseColumn.append(numberBoxes)
         if (color === 'red' || color === 'yellow'){
             for(var i = 2; i<=12; i++) {
-                let numberForBox = i
+                let numberForBox = i 
                 let numberBox = new NumberBox(this.color, numberForBox);
                 let numberBoxHTML = numberBox.createNumberBox();  
                 numberBoxes.append(numberBoxHTML);

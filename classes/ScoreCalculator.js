@@ -67,6 +67,8 @@ class ScoreCalculator {
                 return this.scoresForHowManyXs[this.greenXs]
             case 'blue':
                 return this.scoresForHowManyXs[this.blueXs]
+            case 'x':
+                return this.xAmount * 5
         }
     }
     
@@ -81,5 +83,28 @@ class ScoreCalculator {
         let totalScore = redScore + yellowScore + greenScore + blueScore - xScore;
 
         return totalScore;
+    }
+
+    checkForValidCloseOut = (color) => {
+        switch(color) {
+            case 'red':
+                if(this.redXs === 5){
+                    return true;
+                }
+            case 'yellow':
+                if(this.yellowXs === 5){
+                    return true;
+                }
+            case 'green':
+                if(this.greenXs === 5){
+                    return true;
+                }
+            case 'blue':
+                if(this.blueXs === 5){
+                    return true;
+                }
+            case 'x':
+                return;
+        }
     }
 }
