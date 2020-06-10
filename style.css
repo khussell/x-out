@@ -11,160 +11,162 @@ button{
 }
 
 
-
-
-
-/* @media (min-width: 576px) { */
-    button{
-        width: 100%;
-         
-     }
-
-    .xBox{
-        margin-right: 20px;
-        background-color: white;
-    }
-
-    .numberBox{
-        background-color: rgba(252, 252, 252, 0.911);
-        font-size: 25px;
+button{
+    width: 100%;
         
     }
 
-    .numberRow{
-        height: 70px;
-        margin-bottom: 10px;
-    }
+.xBox{
+    margin-right: 20px;
+    background-color: white;
+}
 
-    .redNumberRow{
-        background-color: rgb(223,60,43);    
-    }
-
-    .yellowNumberRow{
-        background-color: rgb(255,220,46);
-    }
-
-    .greenNumberRow{
-        background-color: rgb(60,176,111);
-    }
-    .blueNumberRow{
-        background-color: rgb(70,107,214);
-    }
-
-    svg{
-        font-size: 30px;
-    }
+.numberBox{
+    background-color: rgba(252, 252, 252, 0.911);
+    font-size: 25px;
     
-    .closeBox{
-        background-color: rgba(252, 252, 252, 0.911);
-       
-    }
+}
 
-    .red {
-        color: rgb(223,60,43);
-    }
+.numberRow{
+    height: 70px;
+    margin-bottom: 10px;
+}
 
-    .yellow{
-        color: rgb(255,220,46);
-    }
+.redNumberRow{
+    background-color: rgb(223,60,43);    
+}
 
-    .green{
-        color: rgb(60,176,111);
-    }
+.yellowNumberRow{
+    background-color: rgb(255,220,46);
+}
 
-    .blue{
-        color: rgb(70,107,214);
-    }
+.greenNumberRow{
+    background-color: rgb(60,176,111);
+}
+.blueNumberRow{
+    background-color: rgb(70,107,214);
+}
 
-    .redTotal{
-        color:  rgb(223,60,43);
-        background-color: rgb(223,60,43);
-        border-radius: 10%;
-        height: 40px;
-        width: 200px;
-        
-    }
+svg{
+    font-size: 30px;
+}
 
-    .yellowTotal{
-        color: rgb(255,220,46);
-        background-color: rgb(255,220,46);
-        border-radius: 10%;
-        height: 40px;
-    }
-
-    .greenTotal{
-        color: rgb(60,176,111);
-        background-color: rgb(60,176,111);
-        border-radius: 10%;
-        height: 40px;
-    }
-
-    .blueTotal{
-        color: rgb(70,107,214);
-        background-color: rgb(70,107,214);
-        border-radius: 10%;
-        height: 40px;
-    }
-
-    .xTotal{
-        color: white;
-        background-color: white;
-        border-radius: 10%;
-        height: 40px;
-    }
+.closeBox{
+    background-color: rgba(252, 252, 252, 0.911);
     
-    .scoreTotal{
-        color: white;
-        background-color: white;
-        border-radius: 10%;
-        height: 40px;
-    }
+}
 
-    .scoreTotal{
-        color: white;
-        background-color: white;
-        border-radius: 10%;
-        height: 40px;
-    }
+.red {
+    color: rgb(223,60,43);
+}
+
+.yellow{
+    color: rgb(255,220,46);
+}
+
+.green{
+    color: rgb(60,176,111);
+}
+
+.blue{
+    color: rgb(70,107,214);
+}
+
+.redTotal{
+    color:  rgb(223,60,43);
+    background-color: rgb(223,60,43);
+    border-radius: 10%;
+    height: 40px;
+    width: 200px;
+    
+}
+
+.yellowTotal{
+    color: rgb(255,220,46);
+    background-color: rgb(255,220,46);
+    border-radius: 10%;
+    height: 40px;
+}
+
+.greenTotal{
+    color: rgb(60,176,111);
+    background-color: rgb(60,176,111);
+    border-radius: 10%;
+    height: 40px;
+}
+
+.blueTotal{
+    color: rgb(70,107,214);
+    background-color: rgb(70,107,214);
+    border-radius: 10%;
+    height: 40px;
+}
+
+.xTotal{
+    color: white;
+    background-color: white;
+    border-radius: 10%;
+    height: 40px;
+}
+
+.scoreTotal{
+    color: white;
+    background-color: white;
+    border-radius: 10%;
+    height: 40px;
+}
+
+.scoreTotal{
+    color: white;
+    background-color: white;
+    border-radius: 10%;
+    height: 40px;
+}
 
 
 
-    .trophyDiv,
-    .endGame{
-        background-color: rgb(220,220,220);
-    }
+.trophyDiv,
+.endGame{
+    background-color: rgb(220,220,220);
+}
 
-    .bi-trophy{
-        color:black;
-    }
+.bi-trophy{
+    color:black;
+}
 
-    .scoreDiv{
-        margin-top: 10px;
-    }
-
-
-
-    .title{
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-
-    .heading{
-        text-align: center;
-        font-size: 35px;
-    }
-
-    .refresh,
-    .addXBtn{
-        border-radius: 10%;
-    }
+.scoreDiv{
+    margin-top: 10px;
+}
 
 
 
+.title{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
+.heading{
+    text-align: center;
+    font-size: 35px;
+}
 
+.refresh,
+.addXBtn{
+    border-radius: 10%;
+}
 
+.hasX{
+    color:black;
+}
 
- /* } */
+.modalEnd, 
+.modalCancel{
+    width: 100px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
 
-
+.modal-content{
+    text-align:center;
+    font-size: 24px;
+}

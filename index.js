@@ -30,13 +30,16 @@ $('body').on('click', '.clickableBox', function(event){
     }
 
     if (button.hasClass('noX')){
-        let isValid = numberTracker.checkNumberIfValid(type, number);
+        
         if (button.hasClass('isLast')){
             let isValidClose = scoreCalculator.checkForValidCloseOut(type);
+            console.log(isValidClose)
             if (!isValidClose) {
                 return;
             }
+            $('.closeBox[data-color=' + type + ']').click();  
         }
+        let isValid = numberTracker.checkNumberIfValid(type, number);
         if (isValid) {
             numberTracker.changeNumber(type, number);
             scoreCalculator.addToScore(type);
@@ -83,10 +86,6 @@ $('body').on('click', '.closeBox', function(event) {
     }
     console.log(closeBoxController.howManyClosed)
 })
-
-
-
-
 
 
 $('body').on('click', '.refresh', function(){

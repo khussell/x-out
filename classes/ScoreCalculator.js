@@ -7,6 +7,7 @@ class ScoreCalculator {
         this.xAmount = 0;
         this.scoresForHowManyXs = [0,1,3,6,10,15,21,28,36,45,55,66,78];
         this.totalScore = 0;
+        this.howManyCloseOuts = 0;
     }
 
     addToScore = (type) => {
@@ -86,25 +87,36 @@ class ScoreCalculator {
     }
 
     checkForValidCloseOut = (color) => {
+        let isValid = false;
         switch(color) {
             case 'red':
                 if(this.redXs === 5){
-                    return true;
+                    console.log(this.redXs)
+                    isValid = true;
                 }
+                break;
             case 'yellow':
                 if(this.yellowXs === 5){
-                    return true;
+                    isValid = true;
                 }
+                break;
             case 'green':
                 if(this.greenXs === 5){
-                    return true;
+                    isValid = true;
                 }
+                break;
             case 'blue':
                 if(this.blueXs === 5){
-                    return true;
+                    isValid = true;
                 }
+                break;
             case 'x':
-                return;
+                return false;
         }
+        return isValid;
+    }
+
+    checkIfLastCloseOut = () => {
+
     }
 }
