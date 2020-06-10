@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/khussell/x-out#readme",
   "dependencies": {
+    "express": "^4.17.1",
     "heroku": "^7.42.1"
   }
 }
